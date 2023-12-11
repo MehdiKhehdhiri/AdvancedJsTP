@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste de tâches</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Liste de tâches</h1>
+    
+    <ul>
+        <li>
+            <label>
+                <input type="checkbox">
+                Payer mes factures
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                Faire la vaisselle
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                Vider les poubelles
+            </label>
+        </li>
+    </ul>
+    
+    <form>
+        <fieldset>
+            <legend>Ajouter une nouvelle tâche</legend>
+            <label for="title">Titre</label>
+            <input type="text" id="title">
+            <label for="priority">Priorité</label>
+            <select name="priority" id="priority">
+                <option value="1">Haute</option>
+                <option value="2">N</option>
+                <option value="3">Faible</option>
+            </select>
+            <button>Enregistrer la tâche</button>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
